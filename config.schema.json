@@ -9,7 +9,13 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "Homebridge Broadlink Window Covering Platform"
+      },
+      "logLevel": {
+        "title": "Log Level",
+        "type": "string",
+        "default": "info",
+        "enum": ["error", "warn", "info", "verbose", "debug", "silly"]
       }
     }
   }

@@ -19,7 +19,7 @@
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint src/**.ts --max-warnings=0",
-    "watch": "npm run build && npm link && nodemon",
+    "watch": "npm run build && npm link && cd /Users/nicolasramirez/.nvm/versions/node/v18.17.0/lib/node_modules/homebridge/bin && node --inspect homebridge -I -D",
     "build": "rimraf ./dist && tsc",
     "prepublishOnly": "npm run lint && npm run build"
   },
@@ -27,7 +27,8 @@
     "homebridge-plugin"
   ],
   "dependencies": {
-    "neramirez-broadlink-ts": "^0.1.1"
+    "neramirez-broadlink-ts": "^0.1.10",
+    "winston": "^3.11.0"
   },
   "devDependencies": {
     "@types/node": "^18.16.20",
