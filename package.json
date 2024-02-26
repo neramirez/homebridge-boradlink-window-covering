@@ -1,16 +1,15 @@
 {
-  "private": true,
   "displayName": "HomeBridge Broadlink Window Cover",
   "name": "homebridge-broadlink-window-covering",
-  "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
+  "version": "0.0.1",
+  "description": "Homebridge Broadlink Window Covering is a plugin for Homebridge that allows you to control Broadlink RF window coverings. It provides an interface for controlling the open, close, and stop commands of the window coverings. The plugin is written in TypeScript and uses the 'neramirez-broadlink-ts' library for Broadlink device communication.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/neramirez/homebridge-boradlink-window-covering.git"
+    "url": "https://github.com/neramirez/homebridge-broadlink-window-covering.git"
   },
   "bugs": {
-    "url": "https://github.com/neramirez/homebridge-boradlink-window-covering/issues"
+    "url": "https://github.com/neramirez/homebridge-broadlink-window-covering/issues"
   },
   "engines": {
     "node": "^18.17.0 || ^20.9.0",

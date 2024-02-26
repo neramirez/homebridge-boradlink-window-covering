@@ -75,6 +75,16 @@ export class WindowCoveringAccessory {
      */
   handleTargetPositionSet(value) {
     this.platform.log.debug('Triggered SET TargetPosition:' + value);
+
+    if (value === this.WINDOW_COVERING_FULLY_OPEN && this.getCurrentPosition() === this.WINDOW_COVERING_FULLY_OPEN) {
+      // Set the current state to fully closed
+      this.accessory.context.currentPosition = this.WINDOW_COVERING_FULLY_CLOSED;
+    }
+    if (value === this.WINDOW_COVERING_FULLY_CLOSED && this.getCurrentPosition() === this.WINDOW_COVERING_FULLY_CLOSED) {
+      // Set the current state to fully open
+      this.accessory.context.currentPosition = this.WINDOW_COVERING_FULLY_OPEN;
+    }
+
     const currentPosition = this.getCurrentPosition();
     if (currentPosition < value) {
       this.openWindowCovering();
