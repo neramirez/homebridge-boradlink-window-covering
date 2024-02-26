@@ -9,19 +9,19 @@ export class HombridgeLogger implements Logger {
     this.homebridgeLogger = homebridgeLogger;
   }
 
-  info(message: string, ...parameters: any[]): void {
+  info(message: string, ...parameters: unknown[]): void {
     this.homebridgeLogger.info(message, ...parameters);
   }
 
-  warn(message: string, ...parameters: any[]): void {
+  warn(message: string, ...parameters: unknown[]): void {
     this.homebridgeLogger.warn(message, ...parameters);
   }
 
-  error(message: string, ...parameters: any[]): void {
+  error(message: string, ...parameters: unknown[]): void {
     this.homebridgeLogger.error(message, ...parameters);
   }
 
-  debug(message: string, ...parameters: any[]): void {
+  debug(message: string, ...parameters: unknown[]): void {
     this.homebridgeLogger.debug(message, ...parameters);
   }
 }
